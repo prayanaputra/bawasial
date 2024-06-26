@@ -47,9 +47,9 @@ heart_diagnosis = ''
 if st.button('Prediksi Penyakit Jantung'):
     heart_prediction = model.predict([[age, sex_numeric, cp, trestbps, chol, fbs, restech, thalach, exang, oldpeak, slope, ca, thal]])
 
-    if heart_prediction[0] == 1: 
-        heart_diagnosis = 'Pasien Terkena Penyakit Jantung'
-    else:
+    if heart_prediction[0] == 0: 
         heart_diagnosis = 'Pasien Tidak Terkena Penyakit Jantung'
+    else:
+        heart_diagnosis = 'Pasien Terkena Penyakit Jantung'
     
     st.success(heart_diagnosis)
