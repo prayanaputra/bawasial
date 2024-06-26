@@ -29,9 +29,9 @@ with col2 :
 with col3 :
     exang = st.number_input('Induksi Angina')
 with col1 :
-    oldpeak = st.number.input('ST Depression')
+    oldpeak = st.number_input('ST Depression')
 with col2 :
-    slope = st.number.input('Slope')
+    slope = st.number_input('Slope')
 with col3 :
     ca = st.number_input('Nilai CA')
 with col1 :
