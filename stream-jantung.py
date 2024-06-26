@@ -8,7 +8,7 @@ model = pickle.load(open('jantung.sav', 'rb'))
 #judul web
 st.title('Prediksi Penyakit Jantung')
 
-col1, col2, col3 = st.colomns(3)
+col1, col2, col3 = st.columns(3)
 
 with col1 :
     age = st.number_input('Umur')
